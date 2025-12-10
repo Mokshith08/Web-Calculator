@@ -28,6 +28,7 @@ Supports both **button clicks** and **keyboard input** with real-time display up
 ---
 
 ## 📁 Project Structure
+
 .
 ├── cal.html        # Main calculator UI & logic
 ├── calc.css        # Stylesheet
