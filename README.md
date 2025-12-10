@@ -29,11 +29,10 @@ Supports both **button clicks** and **keyboard input** with real-time display up
 
 ## 📁 Project Structure
 .
-├── cal.html       # Main calculator UI & logic
-├── calc.css       # Stylesheet
+├── cal.html        # Main calculator UI & logic
+├── calc.css        # Stylesheet
 └── img/
-    └── icon.png   # Favicon (optional)
-
+    └── icon.png    # Favicon 
 
 ---
 
@@ -53,7 +52,7 @@ No installation required:
 -Input is stored in a variable `input`
 -The display updates dynamically using a helper function
 -Full keyboard support is added using a `keydown` event listener
--Expression evaluation uses`eval(input)`
+-Expression evaluation uses `eval(input)`
 
 ---
 
@@ -65,3 +64,6 @@ No installation required:
 
 ---
 
+📜 License
+
+This project is open-source and free to modify.
