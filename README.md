@@ -34,7 +34,7 @@ Supports both **button clicks** and **keyboard input** with real-time display up
 ├── cal.html        # Main calculator UI & logic
 ├── calc.css        # Stylesheet
 └── img/
-    └── icon.png    # Favicon (optional)
+    └── icon.png    # Favicon 
 ```
  
 ---
