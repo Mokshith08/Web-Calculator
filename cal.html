@@ -1,156 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Professional Calculator</title>
-    <link href="" type="logo/icon">
-    <style>
-      * {
-        box-sizing: border-box;
-        font-family: "Poppins", sans-serif;
-      }
-
-      body {
-        margin: 0;
-        background: linear-gradient(135deg, #141e30, #243b55);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        text-align: center;
-        user-select: none;
-      }
-
-      h2 {
-        color: #00ffff;
-        font-size: 50px;
-        font-weight: 700;
-        margin-bottom: 35px;
-        text-shadow: 0 0 20px #00ffff;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        user-select: none;
-      }
-
-      .calculator {
-        width: 450px;
-        background: #1c1c1c;
-        border-radius: 25px;
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-        padding: 30px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-      }
-
-      .display {
-        background: #111;
-        color: #0ff;
-        font-size: 2.4rem;
-        border: none;
-        border-radius: 12px;
-        padding: 20px;
-        text-align: right;
-        outline: none;
-        box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.5);
-        user-select: none;
-      }
-
-      .buttons {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 12px;
-      }
-
-      button {
-        border: none;
-        border-radius: 15px;
-        padding: 22px;
-        font-size: 30px;
-        font-weight: 600;
-        cursor: pointer;
-        color: #fff;
-        background: #2c2c2c;
-        transition: all 0.2s ease-in-out;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-        outline: none;
-        touch-action: manipulation;
-      }
-
-      button:hover {
-        background: #383838;
-      }
-
-      .operator {
-        background: #ff9500;
-      }
-      .operator:hover {
-        background: #ffa733;
-      }
-
-      .clear {
-        background: #ff3b30;
-        color: #fff;
-      }
-      .clear:hover {
-        background: #ff1003;
-      }
-
-      .delete {
-        background: #ff3b30;
-        color: #fff;
-      }
-      .delete:hover {
-        background: #f50707;
-      }
-
-      .equal {
-        background: #34c759;
-        grid-column: span 2;
-      }
-      .equal:hover {
-        background: #037922;
-      }
-
-      button.zero {
-        grid-column: span 2;
-      }
-
-      @media (max-width: 480px) {
-        .calculator {
-          width: 90%;
-        }
-        
-        h2{
-          font-size: 2.5rem;
-          margin-bottom: 25px;
-        }
-
-        .display {
-          font-size: 2rem;
-          padding: 15px;
-        }
-
-        button {
-          font-size: 1.3rem;
-          padding: 18px;
-        }
-      }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" href="img/icon.png" type="logo/png">
+    <link rel="stylesheet" href="calc.css">
   </head>
   <body>
     <h2>Calculator</h2>
 
     <div class="calculator">
-      <input
-        type="text"
-        id="display"
-        class="display"
-        placeholder="0"
-        readonly
-      />
+      <input type="text" id="display" class="display" placeholder="0" readonly>
 
       <div class="buttons">
         <button class="clear">AC</button>

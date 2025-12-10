@@ -1,83 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-h1{
-    font-size: 60px;
-    text-align: center;
-    color: #ffffff;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
-    background: linear-gradient(90deg, #00ffe7, #ff00d4);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
-    animation: glow 2s ease-in-out infinite alternate;
-    caret-color: transparent;
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-body{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background:linear-gradient(45deg, #0a0a0a, #3a4452);
-    caret-color: transparent;
-}
-.calculator{
-    padding: 20px;
-    border: 1px solid gray;
-    border-radius: 20px;
-    background: transparent;
-    box-shadow: 0px 3px 15px rgba(133,115,119,0.5);
-   
-}
-input{
-    width: 320px;
-    border: none;
-    padding: 24px;
-    margin: 10px;
-    background: transparent;
-    box-shadow: 0px 3px 15px rgba(84,84,84,0.1);
-    font-size: 40px;
-    text-align: right;
-    color: white;
-    cursor: pointer;
-    caret-color: lime;
-}
-input::placeholder{
-    color: #ffffff;
-}
-button{
-    border: none;
-    width: 60px;
-    height: 60px;
-    margin: 10px;
-    border-radius: 50%;
-    font-size: 22px;
-    background: transparent;
-    color: #ffffff;
-    box-shadow: -8px -8px 15px rgba(255,255,255,0.1);
-    cursor: pointer;
-}
-.opt{
-    color:  #ff1d58;
-}
-.equal{
-    background-color:green ;
-}
-.equal:hover{
-    background-color: #00ff00;
-}
-.clr{
-    color: DodgerBlue;
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  user-select: none;
 }
 
+h2 {
+  color: #00ffff;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 35px;
+  text-shadow: 0 0 20px #00ffff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  user-select: none;
+}
 
+.calculator {
+  width: 450px;
+  background: #1c1c1c;
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.display {
+  background: #111;
+  color: #0ff;
+  font-size: 2.4rem;
+  border: none;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: right;
+  outline: none;
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.5);
+  user-select: none;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+button {
+  border: none;
+  border-radius: 15px;
+  padding: 22px;
+  font-size: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  background: #2c2c2c;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  outline: none;
+  touch-action: manipulation;
+}
+
+button:hover {
+  background: #383838;
+}
+
+.operator {
+  background: #ff9500;
+}
+.operator:hover {
+  background: #ffa733;
+}
+
+.clear {
+  background: #ff3b30;
+  color: #fff;
+}
+.clear:hover {
+  background: #ff1003;
+}
+
+.delete {
+  background: #ff3b30;
+  color: #fff;
+}
+.delete:hover {
+  background: #f50707;
+}
+
+.equal {
+  background: #34c759;
+  grid-column: span 2;
+}
+.equal:hover {
+  background: #037922;
+}
+
+button.zero {
+  grid-column: span 2;
+}
+
+@media (max-width: 480px) {
+  .calculator {
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+  }
+
+  .display {
+    font-size: 2rem;
+    padding: 15px;
+  }
+
+  button {
+    font-size: 1.3rem;
+    padding: 18px;
+  }
+}
