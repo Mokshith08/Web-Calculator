@@ -27,14 +27,16 @@ Supports both **button clicks** and **keyboard input** with real-time display up
 
 ---
 
-## 📁 Project Structure
+### 📁 Project Structure
 
+```txt
 .
 ├── cal.html        # Main calculator UI & logic
 ├── calc.css        # Stylesheet
 └── img/
-    └── icon.png    # Favicon 
-
+    └── icon.png    # Favicon (optional)
+```
+ 
 ---
 
 ## 🖥️ How to Run
@@ -49,19 +51,19 @@ No installation required:
 
 🧠 JavaScript Logic Summary
 
--All button clicks are captured using `querySelectorAll("button")`
--Input is stored in a variable `input`
--The display updates dynamically using a helper function
--Full keyboard support is added using a `keydown` event listener
--Expression evaluation uses `eval(input)`
+- All button clicks are captured using `querySelectorAll("button")` .
+- Input is stored in a variable `input` .
+- The display updates dynamically using a helper function.
+- Full keyboard support is added using a `keydown` event listener.
+- Expression evaluation uses `eval(input)` .
 
 ---
 
 📱 Responsive Design
 
--Fully adaptive layout for mobile screens
--Buttons resize and reposition dynamically
--Dark-themed, modern, minimal interface
+- Fully adaptive layout for mobile screens.
+- Buttons resize and reposition dynamically.
+- Dark-themed, modern, minimal interface
 
 ---
 
